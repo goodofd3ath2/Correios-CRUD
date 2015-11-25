@@ -1,8 +1,23 @@
+<%@page import="dao.UsuarioDAO"%>
+<%@page import="modelo.Usuario"%>
 <%@include file="cabecalho.jsp"%>
 <%
 //txtnome é o NAME que eu coloquei no input na tela 
 //anterior
-String nome = request.getParameter("txtnome");
+String nome = request.getParameter("txtNome");
+Long id = Long.parseLong(request.getParameter("txtId"));
+String remetente=request.getParameter("txtRemetente");
+String destinatario=request.getParameter("txtDestinatario");
+
+Usuario usuario = new Usuario();
+usuario.setNome(nome);
+usuario.setRemetente(remetente);
+usuario.setDestinatario(destinatario);
+usuario.setId(id);
+UsuarioDAO dao= new UsuarioDAO();
+
+dao.incluir(usuario);
+
 %>
          <h1 class="centro">Cadastro de Usuarios</h1>
             

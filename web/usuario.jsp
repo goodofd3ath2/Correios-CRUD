@@ -34,8 +34,8 @@
                             <td><%=usu.getNome()%></td>
                             <td><%=usu.getRemetente()%></td>
                             <td><%=usu.getDestinatario()%></td>
-                            <td><a href="usuario-atualizar.jsp?nome=<%=usu.getNome()%>">Editar</a>
-                                <a href="alunos-excluir-ok.jsp?nome=<%=usu.getNome()%>">Excluir</a>
+                            <td><a href="usuario-atualizar.jsp?id=<%=usu.getId()%>">Editar</a>
+                                <a href="usuario-excluir-ok.jsp?id=<%=usu.getId()%>">Excluir</a>
                             </td>
                             
                         </tr>

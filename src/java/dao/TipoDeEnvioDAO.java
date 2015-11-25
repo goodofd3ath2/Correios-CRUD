@@ -18,60 +18,60 @@ public class TipoDeEnvioDAO {
     EntityManager em;
     
     public TipoDeEnvioDAO() throws Exception {
-        
         EntityManagerFactory emf;
-        
         emf = Conexao.getConexao();
-        
         em = emf.createEntityManager();
-        
     }
     
     public void incluir(TipoDeEnvio obj) throws Exception {
-        
         try {
-            
+            em.getTransaction().begin();
+            em.persist(obj);
+            em.getTransaction().commit();
         } catch (RuntimeException e) {
-            
+            em.getTransaction().rollback();
+            throw e;
         } finally {
+            em.close();
             
         }
         
     }
-    
+
     public List<TipoDeEnvio> listar() throws Exception {
-        
         return em.createNamedQuery("TipoDeEnvio.findAll").getResultList();
-        
     }
     
     public void alterar(TipoDeEnvio obj) throws Exception {
         
         try {
-            
+            em.getTransaction().begin();
+            em.merge(obj);
+            em.getTransaction().commit();
         } catch (RuntimeException e) {
-            
+            em.getTransaction().rollback();
+            throw e;
         } finally {
-            
+            em.close();
         }
-        
     }
     
     public void excluir(TipoDeEnvio obj) throws Exception {
         
         try {
-            
+            em.getTransaction().begin();
+            em.remove(obj);
+            em.getTransaction().commit();
         } catch (RuntimeException e) {
-            
+            em.getTransaction().rollback();
         } finally {
-            
+            em.close();
         }
-        
+    }
+
+    public void fechaEmf() {
+        Conexao.closeConexao();
     }
     
-    public void fechaEmf() {
-        
-        Conexao.closeConexao();
-        
-    }
+
 }
