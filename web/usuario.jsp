@@ -43,7 +43,10 @@
                             <td><%=usu.getNome()%></td>
                             <td><%=usu.getRemetente()%></td>
                             <td><%=usu.getDestinatario()%></td>
+<<<<<<< HEAD
                             <td><%=usu.getId()%></td>
+=======
+>>>>>>> origin/master
                             <td><a href="usuario-atualizar.jsp?id=<%=usu.getId()%>">Editar</a>
                                 <a href="usuario-excluir-ok.jsp?id=<%=usu.getId()%>">Excluir</a>
                             </td>

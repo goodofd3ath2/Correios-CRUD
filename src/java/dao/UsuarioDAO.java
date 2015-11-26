@@ -85,8 +85,12 @@ public class UsuarioDAO {
     public void fechaEmf() {
         Conexao.closeConexao();
     }
+<<<<<<< HEAD
      public Usuario buscarPorChavePrimaria(Long id){
         return em.find(Usuario.class, id);
     }
+=======
+    
+>>>>>>> origin/master
 
 }

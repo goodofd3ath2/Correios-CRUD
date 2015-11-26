@@ -81,9 +81,14 @@ public class ItemDAO {
 
     public void fechaEmf() {
         Conexao.closeConexao();
+<<<<<<< HEAD
     }
     public Item buscarPorChavePrimaria(Long codigo){
         return em.find(Item.class, codigo);
+=======
+>>>>>>> origin/master
     }
+    
+
 }
 

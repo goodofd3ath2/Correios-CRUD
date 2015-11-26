@@ -9,6 +9,7 @@ Long id = Long.parseLong(request.getParameter("txtId"));
 String remetente=request.getParameter("txtRemetente");
 String destinatario=request.getParameter("txtDestinatario");
 
+<<<<<<< HEAD
     Usuario usuario = new Usuario();
     
     usuario.setNome(nome);
@@ -19,6 +20,16 @@ String destinatario=request.getParameter("txtDestinatario");
 UsuarioDAO dao= new UsuarioDAO();
 
     dao.incluir(usuario);
+=======
+Usuario usuario = new Usuario();
+usuario.setNome(nome);
+usuario.setRemetente(remetente);
+usuario.setDestinatario(destinatario);
+usuario.setId(id);
+UsuarioDAO dao= new UsuarioDAO();
+
+dao.incluir(usuario);
+>>>>>>> origin/master
 
 %>
          <h1 class="centro">Cadastro de Usuarios</h1>
