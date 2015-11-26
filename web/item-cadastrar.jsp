@@ -4,7 +4,8 @@
             
             <div>
                 
-                <form action="professores-cadastrar-ok.jsp">
+                <form action="item-cadastrar-ok.jsp">
+                    <label>Codigo</label><input type="text" name="txtCodigo" /><br />
                     <label>Tipo</label><input type="text" name="txtTipo" /><br />
                     <label>Tamanho</label><input type="text" name="txtTamanho" /><br />
                     <label>Peso</label><input type="text" name="txtPeso" /><br />

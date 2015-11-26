@@ -3,18 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/src/java/dao/Conexao.java</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/item-cadastrar.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/usuario-cadastrar.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/usuario-cadastrar-ok.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/cabecalho.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/item.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/index.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/src/java/dao/UsuarioDAO.java</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/estilo.css</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/item-cadastrar-ok.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/usuario.jsp</file>
-            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/src/conf/persistence.xml</file>
+            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/tipodeenvio-cadastrar.jsp</file>
+            <file>file:/C:/Users/aluno/Documents/GitHub/Correios-CRUD/web/tipodeenvio.jsp</file>
         </group>
     </open-files>
 </project-private>
